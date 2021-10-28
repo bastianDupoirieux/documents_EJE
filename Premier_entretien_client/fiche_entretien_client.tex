@@ -1,0 +1,155 @@
+\documentclass[12pt]{article}
+
+%LES PACKAGES UTILISÉS
+\usepackage{xcolor} %pour les couleurs
+\usepackage[utf8]{inputenc} %pour l'écriture
+\usepackage[french]{babel} %pour avoir les textes automatiques en français
+\usepackage{graphicx} %pour les graphes
+\graphicspath{%add your own graphicspath to logo_EJE}
+\usepackage{fancyhdr} %pour le formatage des pages
+\usepackage[left=0.5cm,right=0.5cm,top=1cm,bottom=2.5cm]{geometry} %formatage du document
+\usepackage{tikz}
+\usepackage{flowfram} % Required for the multi-column layout
+\usepackage{multicol}
+
+
+%LES COULEURS PROPRES A EJE
+\definecolor{rouge_eje}{RGB}{157,9,23}
+
+%LE FORMATAGE DES PAGES
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{ENSAE Junior Études}
+\fancyfoot[R]{Tous droits de reproduction réservés}
+
+\renewcommand{\footrulewidth}{0.4pt}% default is 0pt
+
+
+\begin{document}
+
+\begin{tikzpicture}
+\node [shift={(4cm, 0cm)}] at (current page.north west)
+        { \includegraphics[height = 2.5cm, width = 2.5cm]{logo_EJE.png} };
+       
+\node [shift = {(8cm, 0cm)}, xshift=4.2cm, yshift=-0.1cm] at (current page.north west) {\Huge{\textbf{Guide  premier entretien client }}};
+
+\node [xshift = 21cm, yshift = 1cm] at (current page.north west) {\underline{Mission n$^{\circ}$:}};
+
+\end{tikzpicture}
+
+
+\begin{tikzpicture}
+\draw[color = rouge_eje, ultra thick](0,1) -- (19, 1);
+\end{tikzpicture}
+
+
+\begin{multicols}{2}
+\Large{\textcolor{rouge_eje}{\textbf{Le Client:}}} 
+\bigskip
+
+\large{Nom de l'entreprise:}
+\bigskip
+
+Domaine:
+\bigskip 
+
+Description de l'entreprise:
+\bigskip
+
+Interlocuteur/client:
+
+Adresse:
+
+Mobile:
+
+Mail:
+
+Adresse et nom de facturation: 
+\bigskip
+
+Adresse et nom du signataire:
+
+
+
+\columnbreak
+
+\Large{\textcolor{rouge_eje}{\textbf{La mission:}}}
+\bigskip
+
+\large{Nom de la mission:} 
+\bigskip
+
+Contexte:
+\bigskip
+
+But:
+\bigskip
+
+Cahier des charges:
+\bigskip
+\bigskip
+
+Base de données (taille):
+\bigskip
+
+Dates:
+
+Nombre d'étapes:
+
+\end{multicols}
+
+\begin{tikzpicture}
+\draw[color = black] (0,0) -- (19,0);
+\end{tikzpicture}
+
+\large{\underline{Description et échéance des étapes:}}
+
+
+\vspace{6cm}
+
+\footnotesize \underline{Rappel des domaines de compétences:} Analyse de données, Statistiques descriptives, Machine Learning, Econométrie, Informatique, Economie, Actuariat, Finance, Web Scraping
+
+
+\begin{tikzpicture}
+\draw [color = black] (0,0) --(19,0);
+\end{tikzpicture}
+
+\large{\underline{Notes et commentaires:}}
+
+
+\newpage
+
+
+\Large{Ce document a pour but de donner un fil directeur aux administrateurs en entretien client pour savoir quelles questions poser.}
+
+\bigskip
+
+\large{Première édition, Bastian Dupoirieux, Responsable Audits ENSAE Junior Études, 2021/2022}
+
+
+\bigskip
+
+%add your own update list
+\textcolor{rouge_eje}{\textbf{Suivi des mises à jours}}
+
+\begin{center}
+
+\begin{tabular}{|p{2.5cm}|p{5cm}|p{5cm}|p{5cm}|}
+\hline
+Date & Auteur & Poste & Nature de la modification \\
+\hline
+26/03/2021 & Bastian Dupoirieux & Responsable Audits& Première version du document \\
+\hline
+02/04/2021 & Bastian Dupoirieux & Responsable Audits & Ajout des domaines de compétences\\
+\hline
+
+\end{tabular}
+\end{center}
+
+
+
+
+
+
+\end{document}
