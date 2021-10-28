@@ -1,0 +1,133 @@
+\documentclass[12pt]{article}
+
+%LES PACKAGES UTILISÉS
+\usepackage{xcolor} %pour les couleurs
+\usepackage[utf8]{inputenc} %pour l'écriture
+\usepackage[french]{babel} %pour avoir les textes automatiques en français
+\usepackage{graphicx} %pour les graphes
+\graphicspath{%add your own graphicspath to logo_EJE}
+\usepackage{fancyhdr} %pour le formatage des pages
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2.5cm]{geometry} %formatage du document
+\usepackage{tikz}
+\usepackage{flowfram} % Required for the multi-column layout
+\usepackage{multicol}
+
+
+
+%LES COULEURS PROPRES A EJE
+\definecolor{rouge_eje}{RGB}{155,27,34}
+
+%LE FORMATAGE DES PAGES
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{ENSAE Junior Études}
+\rhead{Processus - [nom du processus]}
+\cfoot{\thepage}
+
+\begin{document}
+
+\begin{tikzpicture}
+\node [shift={(4cm, 0cm)}] at (current page.north west)
+        { \includegraphics[height = 2.5cm, width = 2.5cm]{logo_EJE.png} };
+       
+\node [shift = {(8cm, 0cm)}, xshift=3 cm , yshift = 0.5cm] at (current page.north west) {\Huge{\textbf{Fiche de processus}}};
+\node [shift = {(8cm, 0cm)} ,xshift = 3cm, yshift = -0.5cm] at (current page.north west){\Huge{\textbf{[nom du processus]}}};
+
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\draw[color = rouge_eje, ultra thick](0,1) -- (16.5, 1);
+\end{tikzpicture}
+
+\bigskip
+
+\underline{Mandat:}\\
+
+[année du mandat]
+\\
+
+\underline{Contexte du processus:}\\
+
+Le [processus] s'inscrit dans l'activité de EJE. Il sert à EJE bla bla...
+\\
+Description en gros de ce que le processus fait dans la JE
+\\
+
+\underline{Responsable du processus:}
+\\
+
+[admin(s) responsable(s) du processus, poste, pôle]
+
+
+\section*{Description du processus}
+
+
+\subsection*{Sources d'éléments d'entrée}
+D'où viennent les éléments d'entrée?
+\subsection*{Eléments d'entrée}
+ Les éléments d'entrée
+ 
+ \subsection*{Procédures/Activités}
+\noindent
+\textbf{Procédures:}\\
+Quelles actions mises en place pour le processus? Mettre le nom des actions, la description viendra plus tard
+\\
+\\
+\textbf{Exigences:}\\
+Quelles sont les exigences qu'il faut respecter quand on fait ce processus (exigences de EJE, des autres prestataires etc.)
+\\
+\\
+\textbf{Documents du processus (si applicable)}\\
+Quels sont les documents qui relatifs á ce processus?
+
+
+\subsection*{Eléments de sortie}
+
+Quelle est la sortie de nos processus?
+
+\subsection*{Destinataires des éléments de sortie}
+
+Vers qui vont nos éléments de sortie?
+
+
+\newpage
+
+\section*{Description des procédures}
+
+Description litéraire ou schématique des procédures qui composent le processus
+
+\section*{Indicateurs}
+
+Mettre les indicateurs de ce processus
+\\
+\textit{TODO: repertorier tous les indicateurs et leurs donner un nom en Q.IN}
+
+\section*{Enregistrement}
+
+Où est ce qu'on enregistre les données relatives à ce processus.
+
+\newpage
+
+\large Ce document est un document type de fiche de processus dans le cadres des exigences de la norme ISO 9001 au sein de ENSAE Junior Études
+\\
+\\
+Edition 2021/2022: Bastian Dupoirieux, responsable audits ENSAE Junior Études
+\\
+\\
+\textbf{\textcolor{rouge_eje}{Suivi des mises à jour}}
+
+\begin{center}
+\begin{tabular}{|p{2.5cm} | p{5cm} | p{5cm}|p{5cm}|}
+\hline
+Date & Auteur & Poste & Nature de la modification \\
+\hline
+28/10/2021 & Bastian Dupoirieux & Responsable Audits & Première version du document \\
+\hline
+
+\end{tabular}
+\end{center}
+
+
+
+
+\end{document}
